@@ -1,3 +1,17 @@
+<?php
+    // Check for submit button
+    if (filter_has_var(INPUT_POST, 'submit')) {
+        
+        // Get form data
+        echo "Entered";
+        $first_name = htmlentities($_POST['firstname']);
+        $last_name = htmlentities($_POST['lastname']);
+
+    } else {
+        echo "No name entered";
+    }
+?>
+
 <!doctype html>
 <html lang="en">
   <head>
