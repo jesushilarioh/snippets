@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+/* Add resets if any in this file */
+*,
+*::after,
+*::before {
+  /* Basic Reset */
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  /*
+        - This defines what 1rem is
+        - 1rem = 10px; 
+        - root 16px unless changed by user (62.5% of 16px = 10px);
+        - 10px/16px = 62.5%
+    */
+  font-size: 62.5%;
+  font-family: 'Roboto', sans-serif; }
+
+body {
+  box-sizing: border-box;
+  /* refer to * {box-sizing: inherit;} */
+  padding: 3rem; }
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInN0eWxlLmNvbmNhdC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEsNkRBQTZEO0FBQzdELG1DQUFtQztBQUNuQzs7O0VBR0UsZ0JBQWdCO0VBQ2hCLFNBQVM7RUFDVCxVQUFVO0VBQ1YsbUJBQW1CLEVBQUU7O0FBRXZCO0VBQ0U7Ozs7O0tBS0c7RUFDSCxnQkFBZ0I7RUFDaEIsaUNBQWlDLEVBQUU7O0FBRXJDO0VBQ0Usc0JBQXNCO0VBQ3RCLHNDQUFzQztFQUN0QyxhQUFhLEVBQUUiLCJmaWxlIjoic3R5bGUucHJlZml4LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIkBpbXBvcnQgdXJsKCdodHRwczovL2ZvbnRzLmdvb2dsZWFwaXMuY29tL2Nzcz9mYW1pbHk9Um9ib3RvJyk7XG4vKiBBZGQgcmVzZXRzIGlmIGFueSBpbiB0aGlzIGZpbGUgKi9cbiosXG4qOjphZnRlcixcbio6OmJlZm9yZSB7XG4gIC8qIEJhc2ljIFJlc2V0ICovXG4gIG1hcmdpbjogMDtcbiAgcGFkZGluZzogMDtcbiAgYm94LXNpemluZzogaW5oZXJpdDsgfVxuXG5odG1sIHtcbiAgLypcbiAgICAgICAgLSBUaGlzIGRlZmluZXMgd2hhdCAxcmVtIGlzXG4gICAgICAgIC0gMXJlbSA9IDEwcHg7IFxuICAgICAgICAtIHJvb3QgMTZweCB1bmxlc3MgY2hhbmdlZCBieSB1c2VyICg2Mi41JSBvZiAxNnB4ID0gMTBweCk7XG4gICAgICAgIC0gMTBweC8xNnB4ID0gNjIuNSVcbiAgICAqL1xuICBmb250LXNpemU6IDYyLjUlO1xuICBmb250LWZhbWlseTogJ1JvYm90bycsIHNhbnMtc2VyaWY7IH1cblxuYm9keSB7XG4gIGJveC1zaXppbmc6IGJvcmRlci1ib3g7XG4gIC8qIHJlZmVyIHRvICoge2JveC1zaXppbmc6IGluaGVyaXQ7fSAqL1xuICBwYWRkaW5nOiAzcmVtOyB9XG4iXX0= */

@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+/* Add resets if any in this file */
+*,
+*::after,
+*::before {
+  /* Basic Reset */
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  /*
+        - This defines what 1rem is
+        - 1rem = 10px; 
+        - root 16px unless changed by user (62.5% of 16px = 10px);
+        - 10px/16px = 62.5%
+    */
+  font-size: 62.5%;
+  font-family: 'Roboto', sans-serif; }
+
+body {
+  box-sizing: border-box;
+  /* refer to * {box-sizing: inherit;} */
+  padding: 3rem; }

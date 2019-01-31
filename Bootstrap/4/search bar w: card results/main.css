@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab|Playfair+Display:400,700,900|Open+Sans');
+/* fonts
+font-family: 'Playfair Display', serif;
+font-family: 'Roboto Slab', serif;
+font-family: 'Open Sans', sans-serif;
+*/
+
+body {
+    background-color: #FFF;
+    color: #000;
+    padding-bottom: 15px;
+    font-family: 'Roboto Slab', serif;
+}
+.main-title {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+}
+button, .input-group-text {
+    background-color: #111;
+    color: #fff;
+}
+.container {
+    padding-bottom: 20px;
+}
+.main-title {
+    margin: 20px 0;
+}
+.input-group-lg>.form-control, .input-group-lg>.input-group-btn>.btn {
+    border-radius: 0;
+}
+.input-group>.custom-select:not(:last-child), .input-group>.form-control:not(:last-child), .input-group>.input-group-append>.input-group-text {
+  	border-radius: 0;
+}
+.footer {
+    padding-top: 20px;
+    align-items: flex-end;
+    justify-content: flex-end;
+    flex-direction: column;
+    display: flex;
+}
+.footer-para-1 {
+    font-family: 'Open Sans', sans-serif;
+    margin: 16px 0 0 0;
+}
