@@ -1,1 +1,14 @@
-// Abstracts/Mixins
+@mixin respond($breakpoint) {
+    @if $breakpoint == phone {
+        @media screen and (max-width: 767px) { @content };    // 600px
+    } 
+    @if $breakpoint == tab-port {
+        @media (min-width: 768px) and (max-width: 991px) { @content };   // 900px
+    } 
+    @if $breakpoint == tab-land {
+        @media (min-width: 992px) and (max-width: 1199px) { @content };      // 1200px
+    } 
+    @if $breakpoint == big-desktop {
+        @media screen and (min-width: 1200px) { @content };   // 1800px
+    } 
+}

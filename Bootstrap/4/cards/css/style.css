@@ -1,1 +1,61 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto");*,*::after,*::before{margin:0;padding:0;box-sizing:inherit}html{font-size:62.5%;font-family:'Roboto', sans-serif}body{box-sizing:border-box;padding:3rem}
+/* Add resets if any in this file */
+*,
+*::after,
+*::before {
+  /* Basic Reset */
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  /*
+        - This defines what 1rem is
+        - 1rem = 10px; 
+        - root 16px unless changed by user (62.5% of 16px = 10px);
+        - 10px/16px = 62.5%
+    */
+  font-size: 62.5%; }
+  @media screen and (max-width: 767px) {
+    html {
+      font-size: 50%; } }
+  @media (min-width: 768px) and (max-width: 991px) {
+    html {
+      font-size: 55%; } }
+  @media (min-width: 992px) and (max-width: 1199px) {
+    html {
+      font-size: 80%; } }
+  @media screen and (min-width: 1200px) {
+    html {
+      font-size: 100%; } }
+
+body {
+  box-sizing: border-box;
+  /* refer to * {box-sizing: inherit;} */
+  padding: 3rem; }
+  @media (min-width: 768px) and (max-width: 991px) {
+    body {
+      padding: 2rem; } }
+
+body {
+  /* Defaults */
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  /* font-size: 16px; */
+  line-height: 1.7; }
+
+.card-title {
+  font-family: 'Raleway', sans-serif;
+  background-image: linear-gradient(to right bottom, rgba(255, 185, 0, 0.8), rgba(255, 119, 48, 0.8));
+  display: table-cell;
+  padding: .2rem .5rem;
+  position: absolute;
+  bottom: 0%;
+  right: 2.5%; }
+
+.icon-span__count {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 2rem;
+  margin-right: .25rem; }
+
+.icon-span__icon {
+  margin-right: 1rem; }

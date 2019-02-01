@@ -17,12 +17,29 @@ html {
         - 10px/16px = 62.5%
     */
     font-size: 62.5%; 
-    font-family: 'Roboto', sans-serif;
 
+    @include respond(phone) { // width < 600?
+        font-size: 50%; // 1rem = 6px, 6/16 = 37.5%;
+    }
+
+    @include respond(tab-port) { // width < 900?
+        font-size: 55%; // 1rem = 8px, 8/16 = 50%;
+    }
+
+    @include respond(tab-land) { // width < 1200?
+        font-size: 80%; // 1rem = 9px, 9/16 = 56.25%;
+    }
+
+    @include respond(big-desktop) {
+        font-size: 100%; // 1rem = 12px, 12/16 = 75%;
+    }
 }
 
 body {
     box-sizing: border-box; /* refer to * {box-sizing: inherit;} */
     padding: 3rem;
-    
+
+    @include respond(tab-port) { // width < 900?
+        padding: 2rem;
+    }
 }
