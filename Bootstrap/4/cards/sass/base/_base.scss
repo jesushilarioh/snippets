@@ -39,7 +39,13 @@ body {
     box-sizing: border-box; /* refer to * {box-sizing: inherit;} */
     padding: 3rem;
 
-    @include respond(tab-port) { // width < 900?
-        padding: 2rem;
+    background: #343a40;
+    @include respond(phone) { // width < 900?
+        padding: 0;
     }
+    @include respond(tab-port) { // width < 900?
+        padding: 0;
+    }
+    max-width: 2000px;
+    margin: auto;
 }

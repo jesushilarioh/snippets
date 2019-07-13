@@ -1,4 +1,38 @@
 // Components/Card
+.card-columns {
+    
+    @include respond(phone) { // width < 900?
+        column-gap: 0;
+    }
+    @include respond(tab-port) { // width < 900?
+        column-gap: 0;
+    }
+
+    .card {
+        @include respond(phone) { // width < 900?
+            margin-bottom: 0;
+            border: none;
+            border-radius: 0;
+        }
+        @include respond(tab-port) { // width < 900?
+            margin-bottom: 0;
+            border: none;
+            border-radius: 0;
+        }
+        
+        &-img-overlay {
+
+            background-image:
+                radial-gradient(
+                    rgba(black, 0),
+                    rgba(black, .45)
+                );
+
+            // background-color: rgba(rebeccapurple, 0.8);
+        }
+    } 
+
+}
 .card-title {
     font-family: 'Raleway', sans-serif;
     background-image: 

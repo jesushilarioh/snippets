@@ -14,10 +14,73 @@ html {
         - root 16px unless changed by user (62.5% of 16px = 10px);
         - 10px/16px = 62.5%
     */
-  font-size: 62.5%;
-  font-family: 'Roboto', sans-serif; }
+  font-size: 62.5%; }
+  @media screen and (max-width: 767px) {
+    html {
+      font-size: 50%; } }
+  @media (min-width: 768px) and (max-width: 991px) {
+    html {
+      font-size: 55%; } }
+  @media (min-width: 992px) and (max-width: 1199px) {
+    html {
+      font-size: 80%; } }
+  @media screen and (min-width: 1200px) {
+    html {
+      font-size: 100%; } }
 
 body {
   box-sizing: border-box;
   /* refer to * {box-sizing: inherit;} */
-  padding: 3rem; }
+  padding: 3rem;
+  background: #303030; }
+  @media screen and (max-width: 767px) {
+    body {
+      padding: 0; } }
+  @media (min-width: 768px) and (max-width: 991px) {
+    body {
+      padding: 0; } }
+
+body {
+  /* Defaults */
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  /* font-size: 16px; */
+  line-height: 1.7; }
+
+@media screen and (max-width: 767px) {
+  .card-columns {
+    column-gap: 0; } }
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .card-columns {
+    column-gap: 0; } }
+
+@media screen and (max-width: 767px) {
+  .card-columns .card {
+    margin-bottom: 0;
+    border-radius: 0; } }
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .card-columns .card {
+    margin-bottom: 0;
+    border-radius: 0; } }
+
+.card-columns .card-img-overlay {
+  background-image: radial-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.45)); }
+
+.card-title {
+  font-family: 'Raleway', sans-serif;
+  background-image: linear-gradient(to right bottom, rgba(255, 185, 0, 0.8), rgba(255, 119, 48, 0.8));
+  display: table-cell;
+  padding: .2rem .5rem;
+  position: absolute;
+  bottom: 0%;
+  right: 2.5%; }
+
+.icon-span__count {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 2rem;
+  margin-right: .25rem; }
+
+.icon-span__icon {
+  margin-right: 1rem; }
